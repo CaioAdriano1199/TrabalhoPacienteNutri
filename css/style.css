@@ -11,17 +11,21 @@ body {
     align-items: center;
     margin: auto 42%;
     border-radius: 10px;
+    margin-top: 10%;
 }
 
 .formulario h2 {
     color: rgb(214, 250, 214);
     font-weight: bold;
     font-size: xx-large;
+    margin-bottom: -1%;
 }
 
 .formulario p {
     color: rgb(214, 250, 214);
-    font-size: small;
+    font-size: medium;
+    justify-content: flex-start;
+    margin-top: 10%;
 }
 
 .formulario a {
@@ -50,10 +54,28 @@ body {
     cursor: pointer;
 }
 
-.formulario input{
+.formulario input {
+    display: flex;
     border-radius: 6px;
     border: none;
-    gap: 10%;
-    width: 100%;
+    width: 80%;
+    padding: 4%;
+    margin-top: -4%;
+}
+
+.tituloform {
     align-self: flex-start;
+    margin-left: 7%;
+}
+
+.formulario input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.fraselogin{
+    margin:auto 7%;
+    margin-bottom: 10%;
+
 }

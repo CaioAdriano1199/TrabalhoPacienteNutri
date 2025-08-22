@@ -1,10 +1,16 @@
+:root {
+    --colorprime: rgb(42, 112, 42);
+    --colorsec: rgb(214, 250, 214);
+}
+
+
 body {
-    background-color: rgb(214, 250, 214);
+    background-color: var(--colorsec);
     font-family: Arial, sans-serif;
 }
 
 .formulario {
-    background-color: rgb(42, 112, 42);
+    background-color: var(--colorprime);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,21 +21,21 @@ body {
 }
 
 .formulario h2 {
-    color: rgb(214, 250, 214);
+    color: var(--colorsec);
     font-weight: bold;
     font-size: xx-large;
     margin-bottom: -1%;
 }
 
 .formulario p {
-    color: rgb(214, 250, 214);
+    color: var(--colorsec);
     font-size: medium;
     justify-content: flex-start;
     margin-top: 10%;
 }
 
 .formulario a {
-    color: rgb(214, 250, 214);
+    color: var(--colorsec);
 }
 
 .formulario a:hover {
@@ -39,8 +45,8 @@ body {
 .formulario button {
     width: 70%;
     margin-top: 7%;
-    color: rgb(42, 112, 42);
-    background-color: rgb(214, 250, 214);
+    color: var(--colorprime);
+    background-color: var(--colorsec);
     padding: 2%;
     font-size: medium;
     border: 2px solid transparent;
@@ -48,9 +54,9 @@ body {
 }
 
 .formulario button:hover {
-    color: rgb(214, 250, 214);
-    background-color: rgb(42, 112, 42);
-    border: 2px solid rgb(214, 250, 214);
+    color: var(--colorsec);
+    background-color: var(--colorprime);
+    border: 2px solid var(--colorsec);
     cursor: pointer;
 }
 
@@ -74,12 +80,26 @@ body {
     outline: 0;
 }
 
-.fraselogin{
-    margin:auto 7%;
+.fraselogin {
+    margin: auto 7%;
     margin-bottom: 10%;
 
 }
 
-.pagina{
+.pagina {
     display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    background-color: var(--colorprime);
+    height: 100%;
+    width: 30%;
+}
+
+
+.conteudo{
+    width: 80%;
 }

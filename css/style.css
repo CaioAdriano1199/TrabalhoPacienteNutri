@@ -79,3 +79,7 @@ body {
     margin-bottom: 10%;
 
 }
+
+.pagina{
+    display: flex;
+}

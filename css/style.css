@@ -3,6 +3,11 @@
     --colorsec: rgb(214, 250, 214);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 body {
     background-color: var(--colorsec);
@@ -88,18 +93,80 @@ body {
 
 .pagina {
     display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
 }
 
 .navbar {
     background-color: var(--colorprime);
-    height: 100%;
-    width: 30%;
+    height: 100vh;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.opcoes {
+    color: var(--colorsec);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
-.conteudo{
+.opcoes button {
+    width: 100%;
+    background-color: var(--colorprime);
+    color: var(--colorsec);
+    height: 100%;
+    padding: 25px;
+    font-style: bolder;
+    font-size: larger;
+}
+
+.opcoes button:hover {
+    color: var(--colorprime);
+    background-color: var(--colorsec);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fotologo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--colorsec);
+}
+
+.sair {
+    margin-bottom: 0%;
+    color: var(--colorsec);
+    width: 100%;
+}
+
+.sair button {
+    width: 100%;
+    background-color: var(--colorprime);
+    color: var(--colorsec);
+    height: 100%;
+    padding: 25px;
+    font-style: bolder;
+    font-size: larger;
+}
+
+.sair button:hover {
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
+}
+
+.conteudo h1{
+    color: var(--colorprime);
 }

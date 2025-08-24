@@ -11,7 +11,7 @@
 
 <body class="pagina">
     <nav class="navbar">
-        <div class="fotologo">
+        <div onclick="" class="fotologo">
             <img src="/logomarca.png" alt="Logo" width="100" height="100">
             <h3>NutriCheck</h3>
         </div>
@@ -25,18 +25,101 @@
         </div>
     </nav>
     <div class="conteudo">
-        <div style="display: none;">
+        <div class="telainic">
             <H1>Bem vindo, (Nome do usuario)</H1>
         </div>
-        <div style="align-self: flex-start;">
+        <div class="telapaciente">
             <h1>Pacientes</h1>
+            <button id="openModalBtn" class="botaocad">+</button>
+            <button id="openModaledBtn" class="botaocad">temp</button>
             <table>
                 <tr>
                     <th>Nome</th>
                 </tr>
+                <tr>
+                    <td>João</td>
+                </tr>
+                <tr>
+                    <td>João</td>
+                </tr>
+                <tr>
+                    <td>João</td>
+                </tr>
             </table>
         </div>
     </div>
+
+
+
+
+
+
+    <div id="modalcadastro" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="titulomodal">Cadastro</h2>
+            <form class="cadastropac">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <div class="fonedata">
+                    <input type="text" placeholder="Telefone" required>
+                    <input type="date" placeholder="Data de Nascimento" required>
+                </div>
+                <textarea placeholder="Rotina"></textarea>
+                <textarea placeholder="preferencias alimentares"></textarea>
+                <textarea placeholder="hobbies"></textarea>
+                <button type="submit" class="cadastrocliente">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modaledicao" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="titulomodal">Cadastro</h2>
+            <form class="cadastropac">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <div class="fonedata">
+                    <input type="text" placeholder="Telefone" required>
+                    <input type="date" placeholder="Data de Nascimento" required>
+                </div>
+                <textarea placeholder="Rotina"></textarea>
+                <textarea placeholder="preferencias alimentares"></textarea>
+                <textarea placeholder="hobbies"></textarea>
+                <button type="submit" class="cadastrocliente">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Referências
+        const modalcadastro = document.getElementById("modalcadastro");
+        const modaled = document.getElementById("modaledicao");
+        const openBtn = document.getElementById("openModalBtn");
+        const openBtned = document.getElementById("openModaledBtn");
+        const closeBtn = document.querySelector(".close");
+
+        // Abrir modal
+        openBtn.onclick = () => {
+            modalcadastro.style.display = "block";
+        };
+        openBtned.onclick = () => {
+            modaled.style.display = "block";
+        };
+
+        // Fechar modal (X)
+        closeBtn.onclick = () => {
+            modalcadastro.style.display = "none";
+        };
+
+        // Fechar clicando fora
+        window.onclick = (event) => {
+            if (event.target == modalcadastro) {
+                modalcadastro.style.display = "none";
+            }
+        };
+    </script>
 </body>
 
 </html>

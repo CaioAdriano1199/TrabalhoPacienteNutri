@@ -23,6 +23,7 @@ body {
     margin: auto 42%;
     border-radius: 10px;
     margin-top: 10%;
+    padding: 1%;
 }
 
 .formulario h2 {
@@ -70,8 +71,8 @@ body {
     border-radius: 6px;
     border: none;
     width: 80%;
-    padding: 4%;
-    margin-top: -4%;
+    padding: 3%;
+    margin-top: 1%;
 }
 
 .tituloform {
@@ -278,7 +279,7 @@ body {
 }
 
 /* Inputs */
-input {
+.inputM {
     width: 95%;
     padding: 8px;
     margin: 6px 0;
@@ -304,7 +305,7 @@ input {
     border: 3px solid var(--colorprime)
 }
 
-textarea {
+.textareaM {
     width: 95%;
     height: 100px;
     padding: 8px;

@@ -56,18 +56,18 @@
 
     <div id="modalcadastro" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span id="closemcadastro" class="close">&times;</span>
             <h2 class="titulomodal">Cadastro</h2>
             <form class="cadastropac">
-                <input type="text" placeholder="Nome" required>
-                <input type="email" placeholder="Email" required>
+                <input class="inputM" type="text" placeholder="Nome" required>
+                <input class="inputM" type="email" placeholder="Email" required>
                 <div class="fonedata">
-                    <input type="text" placeholder="Telefone" required>
-                    <input type="date" placeholder="Data de Nascimento" required>
+                    <input class="inputM" type="text" placeholder="Telefone" required>
+                    <input class="inputM" type="date" placeholder="Data de Nascimento" required>
                 </div>
-                <textarea placeholder="Rotina"></textarea>
-                <textarea placeholder="preferencias alimentares"></textarea>
-                <textarea placeholder="hobbies"></textarea>
+                <textarea class="textareaM" placeholder="Rotina"></textarea>
+                <textarea class="textareaM" placeholder="preferencias alimentares"></textarea>
+                <textarea class="textareaM" placeholder="hobbies"></textarea>
                 <button type="submit" class="cadastrocliente">Cadastrar</button>
             </form>
         </div>
@@ -75,18 +75,18 @@
 
     <div id="modaledicao" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 class="titulomodal">Cadastro</h2>
+            <span id="closemeditar" class="close">&times;</span>
+            <h2 class="titulomodal">Editar</h2>
             <form class="cadastropac">
-                <input type="text" placeholder="Nome" required>
-                <input type="email" placeholder="Email" required>
+                <input class="inputM" type="text" placeholder="Nome" required>
+                <input class="inputM" type="email" placeholder="Email" required>
                 <div class="fonedata">
-                    <input type="text" placeholder="Telefone" required>
-                    <input type="date" placeholder="Data de Nascimento" required>
+                    <input class="inputM" type="text" placeholder="Telefone" required>
+                    <input class="inputM" type="date" placeholder="Data de Nascimento" required>
                 </div>
-                <textarea placeholder="Rotina"></textarea>
-                <textarea placeholder="preferencias alimentares"></textarea>
-                <textarea placeholder="hobbies"></textarea>
+                <textarea class="textareaM" placeholder="Rotina"></textarea>
+                <textarea class="textareaM" placeholder="preferencias alimentares"></textarea>
+                <textarea class="textareaM" placeholder="hobbies"></textarea>
                 <button type="submit" class="cadastrocliente">Cadastrar</button>
             </form>
         </div>
@@ -98,7 +98,8 @@
         const modaled = document.getElementById("modaledicao");
         const openBtn = document.getElementById("openModalBtn");
         const openBtned = document.getElementById("openModaledBtn");
-        const closeBtn = document.querySelector(".close");
+        const closeBtnC = document.getElementById("closemcadastro");
+        const closeBtnE = document.getElementById("closemeditar");
 
         // Abrir modal
         openBtn.onclick = () => {
@@ -109,16 +110,25 @@
         };
 
         // Fechar modal (X)
-        closeBtn.onclick = () => {
+        closeBtnC.onclick = () => {
             modalcadastro.style.display = "none";
+        };
+        closeBtnE.onclick = () => {
+            modaled.style.display = "none";
         };
 
         // Fechar clicando fora
-        window.onclick = (event) => {
-            if (event.target == modalcadastro) {
-                modalcadastro.style.display = "none";
-            }
-        };
+window.addEventListener("click", (event) => {
+    if (event.target == modalcadastro) {
+        modalcadastro.style.display = "none";
+    }
+    if (event.target == modaled) {
+        modaled.style.display = "none";
+    }
+});
+
+
+
     </script>
 </body>
 

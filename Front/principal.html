@@ -47,10 +47,134 @@
                 </tr>
             </table>
         </div>
+        <div class="telaconsulta">
+            <h1>Consulta</h1>
+            <select>
+                <option></option>
+                <option>nome1</option>
+                <option>nome2</option>
+                <option>nome3</option>
+            </select>
+            <div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+                <tr>
+                    <td class="refeicao">Café da Manhã</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="refeicao">Lanche</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="refeicao">Almoço</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="refeicao">Café da Tarde</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="refeicao">Janta</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="refeicao">Ceia</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <button>Editar</button>
+            </div>
+            <div>
+                <button onclick="abrirmodlconsulta()">Nova Consulta</button>
+            <table>
+                <tr>
+                    <th>Consultas</th>
+                </tr>
+                <tr>
+                    <td>(00/00/0000)</td>
+                </tr>
+            </table>
+            </div>
+        </div>
     </div>
 
 
-
+  <div id="consultaModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Cadastro de Consulta</h2>
+      <form id="consultaForm">
+        <div class="form-group">
+          <label for="dataConsulta">Data da Consulta</label>
+          <input type="date" id="dataConsulta" name="dataConsulta" required>
+        </div>
+        <div class="form-group">
+          <label for="feedback">Feedback sobre a dieta</label>
+          <textarea id="feedback" name="feedback" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="peso">Peso (kg)</label>
+          <input type="number" id="peso" name="peso" step="0.1">
+        </div>
+        <div class="form-group">
+          <label for="foto">Foto de Progresso</label>
+          <input type="file" id="foto" name="foto" accept="image/*">
+          <img id="preview" alt="Prévia da Foto">
+        </div>
+        <div class="form-group">
+          <label for="obs">Observações</label>
+          <textarea id="obs" name="obs" rows="3"></textarea>
+        </div>
+        <button type="submit">Salvar Consulta</button>
+      </form>
+    </div>
+  </div>
 
 
 
@@ -164,6 +288,9 @@
             modalinfos.style.display = "block"
         }
 
+        function abrirmodlconsulta(){
+            consultaModal.style.display ="block"
+        }
 
         // Abrir modal
         openBtn.onclick = () => {
@@ -197,6 +324,20 @@
                 modalinfos.style.display = "none";
             }
         });
+
+ fotoInput.addEventListener("change", function() {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.addEventListener("load", function() {
+          preview.setAttribute("src", this.result);
+          preview.style.display = "block";
+        });
+        reader.readAsDataURL(file);
+      } else {
+        preview.style.display = "none";
+      }
+    });
     </script>
 </body>
 

@@ -17,7 +17,7 @@
         </div>
         <div class="opcoes">
             <button>Pacientes</button>
-            <button>Dietas</button>
+            <button>Consulta</button>
             <button>Estatisticas</button>
         </div>
         <div class="sair">
@@ -37,13 +37,13 @@
                     <th>Nome</th>
                 </tr>
                 <tr>
-                    <td>João</td>
+                    <td onclick="abrirmodalinfo()">Nome1</td>
                 </tr>
                 <tr>
-                    <td>João</td>
+                    <td>Nome2</td>
                 </tr>
                 <tr>
-                    <td>João</td>
+                    <td>Nome3</td>
                 </tr>
             </table>
         </div>
@@ -92,6 +92,64 @@
         </div>
     </div>
 
+    <div id="modalinfos" class="modal">
+        <div class="modal-contentinfo">
+            <span id="closeminfos" class="close">&times;</span>
+            <h2 class="titulomodal">Informações do cliente</h2>
+            <div>
+                <div class="ajustinfo">
+                    <div class="infoscm">
+                        <div>
+                            <h4>Nome</h4>
+                            <p id="PnomeCliente">(nome do paciente)</p>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p id="PemailCliente">(emaildocliente@email.com)</p>
+                        </div>
+                    </div>
+                    <div class="infoscm">
+                        <div>
+                            <h4>Telefone</h4>
+                            <p id="PfoneCliente">((00)00000-0000)</p>
+                        </div>
+                        <div>
+                            <h4>Data de Nascimento</h4>
+                            <p id="PdatanCliente">(00/00/0000)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="textinfoC">
+                    <h4>Rotina</h4>
+                    <p id="ProtinaCliente">(Rotina) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                        omnis iste! Enim ipsa sequi totam expedita repellat saepe voluptates animi a laudantium
+                        excepturi,
+                        aut fugit placeat libero at aliquam incidunt? </p>
+                </div>
+                <div class="textinfoC">
+                    <h4>Preferencias Alimentares</h4>
+                    <p id="PpaCliente">(preferencias alimentares) Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Voluptates dolores repudiandae corporis ab recusandae! Laboriosam, sed aliquam explicabo
+                        ratione,
+                        debitis enim molestiae fugit accusantium omnis illo aut perferendis suscipit hic! </p>
+                </div>
+                <div class="textinfoC">
+                    <h4>Hobbies</h4>
+                    <p id="PhobbiesCliente">(hobbies) Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                        enim?
+                        Animi quod accusamus neque, asperiores placeat vero soluta voluptatibus impedit? Explicabo,
+                        ipsam
+                        porro? Facilis nam voluptatum voluptas culpa suscipit. Inventore! </p>
+                </div>
+                <div class="botaoinfo">
+                    <button class="infocliente">Editar</button>
+                    <button class="infoclienteEXC infocliente">Excluir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Referências
         const modalcadastro = document.getElementById("modalcadastro");
@@ -100,6 +158,12 @@
         const openBtned = document.getElementById("openModaledBtn");
         const closeBtnC = document.getElementById("closemcadastro");
         const closeBtnE = document.getElementById("closemeditar");
+        const closeBtnInfo = document.getElementById("closeminfos");
+
+        function abrirmodalinfo() {
+            modalinfos.style.display = "block"
+        }
+
 
         // Abrir modal
         openBtn.onclick = () => {
@@ -117,18 +181,22 @@
             modaled.style.display = "none";
         };
 
+        closeBtnInfo.onclick = () => {
+            modalinfos.style.display = "none";
+        }
+
         // Fechar clicando fora
-window.addEventListener("click", (event) => {
-    if (event.target == modalcadastro) {
-        modalcadastro.style.display = "none";
-    }
-    if (event.target == modaled) {
-        modaled.style.display = "none";
-    }
-});
-
-
-
+        window.addEventListener("click", (event) => {
+            if (event.target == modalcadastro) {
+                modalcadastro.style.display = "none";
+            }
+            if (event.target == modaled) {
+                modaled.style.display = "none";
+            }
+            if (event.target == modalinfos) {
+                modalinfos.style.display = "none";
+            }
+        });
     </script>
 </body>
 

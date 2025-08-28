@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "nome": "João da Silva",
+    "email": "joao@email.com",
+    "telefone": "(00)00000-0000",
+    "dataNascimento": "1990-01-01",
+    "rotina": "Minha rotina diária inclui acordar cedo, fazer café da manhã, seguir com atividades de estudo ou trabalho, intercalando pequenas pausas. Almoço e jantar costumam ser horários fixos, e tento incluir lanches saudáveis entre as refeições. Procuro manter horários regulares de sono e me dedicar a momentos de lazer e exercícios leves quando possível.",
+    "preferencias": "Vegetariano",
+    "hobbies": "Leitura, jogos, música, programação e passeios ao ar livre.",
+    "dieta": {
+      "segunda": {
+        "cafeManha": "Pão integral",
+        "lanche": "Fruta",
+        "almoco": "Arroz, feijão e frango",
+        "cafeTarde": "Iogurte",
+        "janta": "Sopa de legumes",
+        "ceia": "Chá"
+      },
+      "terça": {
+        "cafeManha": "Cereal com leite",
+        "lanche": "Banana",
+        "almoco": "Peixe e salada",
+        "cafeTarde": "Fruta",
+        "janta": "Omelete",
+        "ceia": "Leite"
+      },
+      "quarta": {
+        "cafeManha": "Pão integral com queijo",
+        "lanche": "Maçã",
+        "almoco": "Arroz, feijão e carne",
+        "cafeTarde": "Iogurte",
+        "janta": "Sopa",
+        "ceia": "Chá"
+      },
+      "quinta": {
+        "cafeManha": "Ovos mexidos",
+        "lanche": "Fruta",
+        "almoco": "Frango grelhado com salada",
+        "cafeTarde": "Iogurte",
+        "janta": "Sopa de legumes",
+        "ceia": "Leite"
+      },
+      "sexta": {
+        "cafeManha": "Cereal com leite",
+        "lanche": "Banana",
+        "almoco": "Peixe com arroz e salada",
+        "cafeTarde": "Fruta",
+        "janta": "Omelete",
+        "ceia": "Chá"
+      },
+      "sabado": {
+        "cafeManha": "Pão com geleia",
+        "lanche": "Fruta",
+        "almoco": "Arroz, feijão e carne",
+        "cafeTarde": "Iogurte",
+        "janta": "Sopa",
+        "ceia": "Leite"
+      },
+      "domingo": {
+        "cafeManha": "Panqueca",
+        "lanche": "Fruta",
+        "almoco": "Frango assado com salada",
+        "cafeTarde": "Iogurte",
+        "janta": "Sopa de legumes",
+        "ceia": "Chá"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "nome": "Maria oliveira",
+    "email": "maria@email.com",
+    "telefone": "(00)00000-0001",
+    "dataNascimento": "1992-02-02",
+    "rotina": "Sedentária",
+    "preferencias": "Carnívora",
+    "hobbies": "Leitura",
+    "dieta": {
+      "segunda": {
+        "cafeManha": "Pão",
+        "lanche": "Banana",
+        "almoco": "Arroz, feijão e peixe",
+        "cafeTarde": "Iogurte",
+        "janta": "Sopa",
+        "ceia": "Chá"
+      },
+      "terça": {
+        "cafeManha": "Cereal com leite",
+        "lanche": "Maçã",
+        "almoco": "Frango grelhado com salada",
+        "cafeTarde": "Fruta",
+        "janta": "Omelete",
+        "ceia": "Leite"
+      },
+      "quarta": {
+        "cafeManha": "Ovos mexidos",
+        "lanche": "Fruta",
+        "almoco": "Peixe com arroz e salada",
+        "cafeTarde": "Iogurte",
+        "janta": "Sopa",
+        "ceia": "Chá"
+      },
+      "quinta": {
+        "cafeManha": "Pão integral com queijo",
+        "lanche": "Banana",
+        "almoco": "Arroz, feijão e carne",
+        "cafeTarde": "Iogurte",
+        "janta": "Sopa de legumes",
+        "ceia": "Leite"
+      },
+      "sexta": {
+        "cafeManha": "Cereal com leite",
+        "lanche": "Fruta",
+        "almoco": "Frango com salada",
+        "cafeTarde": "Iogurte",
+        "janta": "Omelete",
+        "ceia": "Chá"
+      },
+      "sabado": {
+        "cafeManha": "Pão com geleia",
+        "lanche": "Maçã",
+        "almoco": "Arroz, feijão e carne",
+        "cafeTarde": "Fruta",
+        "janta": "Sopa",
+        "ceia": "Leite"
+      },
+      "domingo": {
+        "cafeManha": "Panqueca",
+        "lanche": "Banana",
+        "almoco": "Frango assado com salada",
+        "cafeTarde": "Iogurte",
+        "janta": "Sopa de legumes",
+        "ceia": "Chá"
+      }
+    }
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "pacienteId": 1,
+    "consultas": [
+      {
+        "data": "2025-08-01",
+        "feedback": "Seguiu dieta corretamente",
+        "peso": 70.2,
+        "observacoes": "Paciente sentiu-se bem",
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM2Zb67mVqu4xqoDPUaR2V0fIWhh4uJ2Cw4w&s" 
+      },
+      {
+        "data": "2025-08-15",
+        "feedback": "Faltou na academia",
+        "peso": 71,
+        "observacoes": "Aumentar ingestão de água",
+        "foto": ""
+      }
+    ]
+  },
+  {
+    "pacienteId": 2,
+    "consultas": [
+      {
+        "data": "2025-08-05",
+        "feedback": "Excelente adesão à dieta",
+        "peso": 65,
+        "observacoes": "Continuar assim",
+        "foto": ""
+      }
+    ]
+  }
+]
